@@ -1,0 +1,326 @@
+body{
+    background-color:aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:10px;
+}
+.student-header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    width:100%;
+}
+
+.student-photo{
+    text-align:left;
+    border-radius:100% ;
+}
+
+.student-name h2{
+    font-size:20px;
+    text-align:right;
+    color:black;
+
+}
+#header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+#title{
+    text-align: left;
+}
+#link{
+    gap:50px;
+    text-align: right;
+}
+.contant{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+.card{
+    width:150px;
+    height: 180;
+    border: 1px solid greenyellow;
+}
+h1{
+    color:blue;
+    text-align:center;
+}
+                                 
+h2{
+    color:darkblue;
+}
+
+h3{
+   
+    color:darkgoldenrod;
+}
+
+p{
+    font-size:18px;
+    text-align:justify;
+}
+
+ul{
+    font-size:18px;
+}
+
+a{
+    text-decoration:none;
+    color:blue;
+    font-weight:bold;
+}
+
+a:hover{
+    color:red;
+}
+
+hr{
+    border:1px solid gray;
+}
+                                              
+img{
+    border-radius:10px;
+}
+button{
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:10px 20px;
+    font-size:16px;
+    /*cursor:pointer;*/
+}
+
+button:hover{
+    background-color:cornflowerblue;
+}
+
+.login-box{
+    width:350px;
+    margin:auto;
+    padding:20px;
+    border:1px solid gray;
+    border-radius:10px;
+    background-color:whitesmoke;
+    text-align:center;
+}
+
+label{
+    display:inline-block;
+    width:100px;
+    text-align:left;
+}
+
+input{
+    padding:8px;
+    margin:8px;
+}
+
+input[type="submit"]{
+    margin-top:15px;
+    padding:8px 20px;
+    background-color: blue;
+    color:white;
+    padding:5 px;
+    border-radius:10px ;
+    border-color: cadetblue;
+
+}
+
+.dashboard-btn{
+    width:135px;
+    height:80px;
+    background-color:whitesmoke;
+    color:black;
+    border:1px solid black;
+    font-size:20px;
+    border-radius:0px;
+}
+
+.dashboard-btn:hover{
+    background-color:lightblue;
+}
+
+.profile-box{
+    width:500px;
+    padding:20px;
+    border:1px solid gray;
+    border-radius:10px;
+    background-color:whitesmoke;
+}
+
+.profile-box p{
+    text-align:left;
+    margin:15px;
+}
+
+.profile-box button{
+    background-color:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:10px 15px;
+    margin:5px;
+}
+
+.profile-box button:hover{
+    background-color:blue;
+}
+
+footer{
+    text-align:center;
+    margin-top:50px;
+}
+
+.fees-table{
+    border-collapse:collapse;
+    width:70%;
+    text-align:center;
+}
+
+.fees-table th{
+    background-color:lightblue;
+    color:black;
+    padding:12px;
+}
+
+.fees-table td{
+    padding:10px;
+    border:1px solid gray;
+}
+
+.fees-table tr:hover{
+    background-color:whitesmoke;
+}
+
+.attendance-table{
+    border-collapse:collapse;
+    width:80%;
+    text-align:center;
+}
+
+.attendance-table th{
+    background-color:lightblue;
+    padding:12px;
+    border:1px solid gray;
+}
+
+.attendance-table td{
+    padding:10px;
+    border:1px solid gray;
+}
+
+.attendance-table tr:hover{
+    background-color:whitesmoke;
+}
+
+
+.page-title{
+    color:maroon;
+    background-color:khaki;
+    font-weight:bold;
+    padding:5px;
+}
+
+.result-info{
+    border-collapse:collapse;
+    width:70%;
+    text-align:left;
+}
+
+.result-info th,
+.result-info td{
+    border:1px solid gray;
+    padding:10px;
+}
+
+.result-info th{
+    background-color:lightblue;
+}
+
+.result-table{
+    border-collapse:collapse;
+    width:70%;
+    text-align:center;
+}
+
+.result-table th{
+    background-color:lightblue;
+    color:black;
+    padding:12px;
+    border:1px solid gray;
+}
+
+.result-table td{
+    padding:10px;
+    border:1px solid gray;
+}
+
+.result-table tr:hover{
+    background-color:whitesmoke;
+}
+
+
+
+.timetable{
+    border-collapse:collapse;
+    width:95%;
+    text-align:center;
+}
+
+.timetable th{
+    background-color:lightblue;
+    color:black;
+    padding:10px;
+    border:1px solid gray;
+}
+
+.timetable td{
+    padding:10px;
+    border:1px solid gray;
+}
+
+.timetable tr:hover{
+    background-color:whitesmoke;
+}
+
+.timetable th:first-child{
+    font-weight:bold;
+}
+
+
+
+.event-table{
+    border-collapse:collapse;
+    width:90%;
+    text-align:center;
+}
+
+.event-table th{
+    background-color:lightblue;
+    color:black;
+    padding:12px;
+    border:1px solid gray;
+}
+
+.event-table td{
+    padding:12px;
+    border:1px solid gray;
+}
+
+.event-table tr:hover{
+    background-color:whitesmoke;
+}
+footer{
+    text-align:center;
+    font-weight:bold;
+    margin-top: 150px;
+}

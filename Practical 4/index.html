@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>StudentHub Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="student-header d-flex align-items-center">
+
+        <div class="student-photo">
+            <img src="profile photo.png" width="80">
+        </div>
+
+        <div class="student-name ms-3">
+            <h2>Panha Patel</h2>
+        </div>
+
+    </div>
+
+    <div class="row align-items-center">
+
+        <div class="col-2 text-center">
+            <img src="logo.png" width="100">
+        </div>
+
+        <div class="col-8 text-center">
+            <h1>STUDENTHUB PORTAL</h1>
+        </div>
+
+        <div class="col-2 text-center">
+            <a href="login.html">
+                <button class="btn btn-primary">Login</button>
+            </a>
+        </div>
+
+    </div>
+
+
+    <h3 class="text-center">Welcome to StudentHub Portal</h3>
+
+    <hr>
+
+    <div class="text-center">
+
+        <button class="btn btn-secondary" onclick="toggleMenu()">
+            ☰ Menu
+        </button>
+
+    </div>
+
+    <div id="menu" class="text-center mt-2" style="display:none;">
+
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="register.html">Register</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="faq.html">FAQ</a>
+
+    </div>
+
+    <hr>
+
+    <div class="text-center mb-3">
+
+        <button class="btn btn-dark" onclick="changeTheme()">
+            🌙 / ☀️ Theme
+        </button>
+
+    </div>
+
+    <div class="container mb-4">
+
+        <div id="studentSlider" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img src="logo.png" class="d-block mx-auto" width="200">
+
+                    <div class="text-center mt-2">
+                        <h4>StudentHub Portal</h4>
+                        <p>Manage your academic activities easily.</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="text-center p-4">
+
+                        <h4>Student Dashboard</h4>
+
+                        <p>
+                            Check attendance, results, fees and important notices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="text-center p-4">
+
+                        <h4>Upcoming Events</h4>
+
+                        <p>
+                            Stay updated with college events and activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#studentSlider"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#studentSlider"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <p>
+                    StudentHub provides an easy and user-friendly platform for students to
+                    manage their academic activities, access important notices, check results,
+                    and stay updated with college events.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h2>Features</h2>
+
+                <ul>
+
+                    <li>Student Registration</li>
+                    <li>Student Login</li>
+                    <li>Student Dashboard</li>
+                    <li>Student Profile</li>
+                    <li>View Attendance</li>
+                    <li>View Results</li>
+                    <li>Latest Notices</li>
+                    <li>Upcoming Events</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+
+        <button class="btn btn-success" onclick="openModal()">
+            View Welcome Message
+        </button>
+
+    </div>
+
+    <div id="welcomeModal"
+        style="display:none; position:fixed; top:0; left:0;
+        width:100%; height:100%; background:rgba(0,0,0,0.5);">
+
+        <div style="background:white; width:350px; padding:25px;
+            margin:150px auto; text-align:center; border-radius:10px;">
+
+            <h3>Welcome!</h3>
+
+            <p>
+                Welcome to StudentHub Portal.
+                Manage your academic activities easily.
+            </p>
+
+            <button class="btn btn-danger" onclick="closeModal()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-4 p-3">
+
+        &copy;2026 StudentHub Portal
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function toggleMenu() {
+
+            let menu = document.getElementById("menu");
+
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            }
+            else {
+                menu.style.display = "none";
+            }
+
+        }
+
+        function changeTheme() {
+
+            document.body.classList.toggle("bg-dark");
+            document.body.classList.toggle("text-white");
+
+        }
+
+        function openModal() {
+
+            document.getElementById("welcomeModal").style.display = "block";
+
+        }
+        function closeModal() {
+
+            document.getElementById("welcomeModal").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+

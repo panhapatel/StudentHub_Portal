@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="style.css">
+<title>Login</title>
+</head>
+<body>
+   <table width="100%">
+      <tr>
+         <td width="20%" align="center">
+            <img src="logo.png" width="100">
+
+         </td>
+         <td width="60%" align="center">
+            <h1>STUDENTHUB PORTAL</h1>
+         </td>
+         <td width="20%">
+            <a href="index.html">
+             <button>Home</button>
+             </a>
+         </td>
+
+      </tr>
+   </table>
+<center>
+<h2>
+   <span style="background-color: beige;
+                color:crimson;
+                font-weight: bold;
+                padding:5px ; ">
+                Student Login
+               </span>
+</h2>
+</center>
+
+
+<div class="login-box">
+<form action="dashboard.html" method="post">
+   
+    
+       <label for="Username" >Username</label>
+       <input type="text" id="Username" name="Username" placeholder="Enter your Username" required ><br><br>
+ 
+    
+
+ 
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" placeholder="Enter your Password" pattern="[@-*]{1}[0-9]{4}[A-Z]{3}" required><br><br>
+ 
+
+
+
+<input type="submit" value="Login">
+
+</form>
+<p>
+Don't have an account?
+<a href="register.html">Create an Account</a>
+</p>
+</div>
+
+<footer>
+   &copy;2026 StudentHub Portal
+</footer>
+
+
+</body>
+</html>

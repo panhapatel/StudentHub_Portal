@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Dashboard</title>
+
+</head>
+
+<body>
+
+    <table width="100%">
+
+        <tr>
+
+            <td width="20%" align="center">
+
+                <a href="index.html">
+                    <button>Home</button>
+                </a>
+
+            </td>
+
+            <td width="60%" align="center">
+
+                <h1>Student Dashboard</h1>
+
+            </td>
+
+            <td width="20%" align="center">
+
+                <a href="login.html">
+                    <button class="btn btn-danger">Logout</button>
+                </a>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <div class="text-center">
+
+        <button class="btn btn-secondary" onclick="toggleMenu()">
+            ☰ Menu
+        </button>
+
+    </div>
+
+
+    <div id="menu" class="text-center mt-2" style="display:none;">
+
+        <a href="index.html">Home</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="fees.html">Fees</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="result.html">Result</a> |
+        <a href="event.html">Event</a>
+
+    </div>
+
+    <div class="text-center mt-3">
+
+        <button class="btn btn-dark" onclick="changeTheme()">
+            🌙 / ☀️ Theme
+        </button>
+
+    </div>
+    <div id="notification"
+        class="alert alert-info text-center mt-4 mx-auto"
+        style="width:80%;">
+
+        <strong>📢 Important Notice:</strong>
+
+        <span id="noticeText">
+            Welcome to StudentHub Dashboard!
+            Check your latest notices and upcoming events.
+        </span>
+
+        <button class="btn btn-sm btn-danger ms-3"
+            onclick="closeNotification()">
+
+            × Close
+
+        </button>
+
+    </div>
+
+
+    <br><br>
+    <div class="text-center">
+
+        <table width="80%" cellpadding="35">
+
+            <tr>
+
+                <td align="center">
+
+                    <a href="profile.html">
+                        <button class="dashboard-btn">Profile</button>
+                    </a>
+
+                </td>
+
+                <td align="center">
+
+                    <a href="fees.html">
+                        <button class="dashboard-btn">Fees</button>
+                    </a>
+
+                </td>
+
+                <td align="center">
+
+                    <a href="attendance.html">
+                        <button class="dashboard-btn">Attendance</button>
+                    </a>
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td align="center">
+
+                    <a href="result.html">
+                        <button class="dashboard-btn">Result</button>
+                    </a>
+
+                </td>
+
+                <td align="center">
+
+                    <a href="timetable.html">
+                        <button class="dashboard-btn">Time Table</button>
+                    </a>
+
+                </td>
+
+                <td align="center">
+
+                    <a href="event.html">
+                        <button class="dashboard-btn">Event</button>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <br><br><br><br><br>
+
+    <hr>
+
+
+    <footer class="text-center">
+
+        &copy; 2026 StudentHub Portal
+
+    </footer>
+
+    <script>
+
+        function toggleMenu() {
+
+            let menu = document.getElementById("menu");
+
+            if (menu.style.display === "none") {
+
+                menu.style.display = "block";
+
+            }
+            else {
+
+                menu.style.display = "none";
+
+            }
+
+        }
+
+        function changeTheme() {
+
+            document.body.classList.toggle("bg-dark");
+
+            document.body.classList.toggle("text-white");
+
+        }
+
+        function closeNotification() {
+
+            document.getElementById("notification").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+

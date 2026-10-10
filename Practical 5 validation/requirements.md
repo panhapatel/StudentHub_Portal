@@ -1,0 +1,12 @@
+## Requirements
+- Home Page
+- About Page
+- Register Page
+- Login Page
+- Dashboard
+- Profile Page
+- Fees page
+- Attendance page
+- Event Page
+- Contact page
+- FAQ Page

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table width="100%">
+        <tr>
+            <td width="20%" align="center">
+                <img src="logo.png" width="100">
+            </td>
+
+            <td width="60%">
+                <h1>STUDENTHUB PORTAL</h1>
+            </td>
+
+            <td width="20%"></td>
+        </tr>
+    </table>
+
+    <center>
+        <h2>
+            <span style="color:maroon;
+                         background-color:khaki;
+                         font-weight:bold;">
+                Student Registration
+            </span>
+        </h2>
+    </center>
+
+    <div class="login-box">
+
+        <form id="registerForm" action="login.html" method="post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name">
+            <span id="nameerror" class="error"></span>
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"
+                   placeholder="Enter your email">
+            <span id="emailerror" class="error"></span>
+            <br><br>
+
+            Gender:
+
+            <input type="radio" value="Male" id="male" name="gender">
+            Male
+
+            <input type="radio" value="Female" id="female" name="gender">
+            Female
+
+            <span id="gendererror" class="error"></span>
+            <br><br>
+
+            <label for="contact">Mobile Number</label>
+            <input type="tel" id="contact" name="mobile"
+                   placeholder="Enter your mobile number">
+            <span id="contacterror" class="error"></span>
+            <br><br>
+
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="Password"
+                   placeholder="Enter your Password">
+            <span id="passworderror" class="error"></span>
+            <br><br>
+
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" id="ConfirmPassword"
+                   name="ConfirmPassword"
+                   placeholder="Confirm password">
+            <span id="confirmpassworderror" class="error"></span>
+            <br><br>
+
+            <label for="course">Course</label>
+            <select id="course" name="course">
+                <option value="">-- Select Course --</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+            <span id="courseerror" class="error"></span>
+            <br><br>
+
+            <label for="year">Year</label>
+            <select id="year" name="year">
+                <option value="">-- Select Year --</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <span id="yearerror" class="error"></span>
+            <br><br>
+
+           <div class="terms">
+            <label>
+               <input type="checkbox" id="terms" name="terms">
+                I accept the Terms and Conditions
+            </label>
+           </div>
+             <span id="termserror" class="error"></span>
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p>
+            If you have already registered
+            <a href="login.html">Please login</a>
+        </p>
+
+    </div>
+
+    <footer>
+        &copy;2026 StudentHub Portal
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

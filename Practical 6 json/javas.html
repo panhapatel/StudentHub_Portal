@@ -1,0 +1,27 @@
+<html lang="en">
+    <body>
+
+        <main>
+            <h1>01.DOM Definition and Tree</h1>
+            <section>
+                <h2 id="PortalTitle">StudentHub</h2>
+                <p id="PortalMessage">Welcome</p>
+            </section>
+                <button id="ChangeTitleButton" type="button">Change heading</button>
+                <p id="output">The DOM is ready</p>
+                </main>
+
+                <script>
+                    const title=document.querySelector("#PortalTitle");
+                    const button =document.querySelector("#ChangeTitleButton");
+                    const output=document.querySelector("#output");
+
+                    button.addEventListenerq("click", () => {
+                        title.textContent="Studebt Deshboard";
+
+                        output.textContent="The h2 node was update through the DOM";
+                      }); 
+                </script>
+
+    </body>
+ </html>

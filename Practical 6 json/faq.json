@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What is StudentHub Portal?",
+        "answer": "StudentHub Portal is an online platform that helps students manage their academic information and activities."
+    },
+    {
+        "question": "How can I register on StudentHub?",
+        "answer": "Click on the Register option and fill in the required details. Then click on the Register button."
+    },
+    {
+        "question": "How can I login?",
+        "answer": "If you already have an account, click on Login and enter your username and password."
+    },
+    {
+        "question": "What should I do if I have not registered?",
+        "answer": "Click on Create an Account to register first."
+    },
+    {
+        "question": "What information can I access through StudentHub?",
+        "answer": "Students can access their profile, attendance, results, notices, events and other academic information."
+    },
+    {
+        "question": "How can I contact StudentHub?",
+        "answer": "You can visit the Contact Us page and send us a message."
+    },
+    {
+        "question": "What should I do if I have a problem with the portal?",
+        "answer": "You can contact the StudentHub support team through the Contact Us page."
+    }
+]

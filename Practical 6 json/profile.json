@@ -1,0 +1,17 @@
+
+    {
+       "name" : "Panha",
+        "enrollment": "25CE085",
+        "dob" : "2006-11-17",
+        "gender": "Female",
+        "department": "CE",
+        "course": "B.Tech",
+        "semester": "3rd",
+        "cgpa": "7.63",
+        "mobile": "8799516661",
+        "collegeEmail": "25ce085@charusat.edu.in",
+        "personalEmail": "panhapatel79@gmail.com",
+        "address": "Idar, Sabarkantha"
+
+
+    }

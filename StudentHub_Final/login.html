@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<table width="100%">
+    <tr>
+        <td width="20%" align="center">
+            <img src="logo.png" width="100" alt="StudentHub Logo">
+        </td>
+
+        <td width="60%" align="center">
+            <h1>STUDENTHUB PORTAL</h1>
+        </td>
+
+        <td width="20%" align="center">
+            <a href="index.html">
+                <button type="button">Home</button>
+            </a>
+        </td>
+    </tr>
+</table>
+
+<center>
+    <h2>
+        <span style="background-color: beige;
+                     color: crimson;
+                     font-weight: bold;
+                     padding: 5px;">
+            Student Login
+        </span>
+    </h2>
+</center>
+
+<div class="login-box">
+
+    <form action="login.php" method="post">
+
+        <label for="email">Email</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your registered email"
+               required>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter your password"
+               required>
+        <br><br>
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="remember" value="1">
+            Remember Me
+        </label>
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <p>
+        Don't have an account?
+        <a href="register.html">Create an Account</a>
+    </p>
+
+</div>
+
+<footer>
+    &copy;2026 StudentHub Portal
+</footer>
+
+</body>
+</html>

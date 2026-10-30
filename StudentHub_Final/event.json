@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Tech Fest 2026",
+        "date": "2026-08-15",
+        "time": "10:00 AM",
+        "venue": "College Auditorium",
+        "details": "Technical competitions and exhibitions."
+    },
+    {
+        "id": 2,
+        "name": "Coding Competition",
+        "date": "2026-10-20",
+        "time": "11:00 AM",
+        "venue": "Computer Lab",
+        "details": "Programming and problem-solving competition."
+    },
+    {
+        "id": 3,
+        "name": "Sports Day",
+        "date": "2026-10-25",
+        "time": "8:00 AM",
+        "venue": "College Ground",
+        "details": "Various indoor and outdoor sports activities."
+    },
+    {
+        "id": 4,
+        "name": "Workshop on AI",
+        "date": "2026-11-30",
+        "time": "2:00 PM",
+        "venue": "Seminar Hall",
+        "details": "Introduction to Artificial Intelligence."
+    },
+    {
+        "id": 5,
+        "name": "Independence Day Celebration",
+        "date": "2026-08-15",
+        "time": "8:00 AM",
+        "venue": "College Campus",
+        "details": "Cultural program and flag hoisting."
+    }
+]
